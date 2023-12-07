@@ -18,9 +18,4 @@ void complexEventLoopOrder() {
   print('11 synchronous');
 }
 
-//1,11,4,5,2,3,7,8,9,10,6
-
-void main() {
-  Future x = Future(complexEventLoopOrder);
-  print(x);
-}
+//1,11,4,5,2,3,7,9,10,8,6
